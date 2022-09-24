@@ -19,6 +19,7 @@
 		B4719BA228DF5BCD007AA1E3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B4719BA428DF5BCE007AA1E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4719BA728DF5BCE007AA1E3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B4719BAE28DF6220007AA1E3 /* WeatherKit_CoreLocation_SwiftUI_Tutorial.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WeatherKit_CoreLocation_SwiftUI_Tutorial.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +52,7 @@
 		B4719B9F28DF5BCD007AA1E3 /* WeatherKit_CoreLocation_SwiftUI_Tutorial */ = {
 			isa = PBXGroup;
 			children = (
+				B4719BAE28DF6220007AA1E3 /* WeatherKit_CoreLocation_SwiftUI_Tutorial.entitlements */,
 				B4719BA028DF5BCD007AA1E3 /* WeatherKit_CoreLocation_SwiftUI_TutorialApp.swift */,
 				B4719BA228DF5BCD007AA1E3 /* ContentView.swift */,
 				B4719BA428DF5BCE007AA1E3 /* Assets.xcassets */,
@@ -264,6 +266,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = WeatherKit_CoreLocation_SwiftUI_Tutorial/WeatherKit_CoreLocation_SwiftUI_Tutorial.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"WeatherKit_CoreLocation_SwiftUI_Tutorial/Preview Content\"";
@@ -293,6 +296,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = WeatherKit_CoreLocation_SwiftUI_Tutorial/WeatherKit_CoreLocation_SwiftUI_Tutorial.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"WeatherKit_CoreLocation_SwiftUI_Tutorial/Preview Content\"";

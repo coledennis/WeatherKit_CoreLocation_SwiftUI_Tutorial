@@ -12,6 +12,7 @@
 		B4719BA528DF5BCE007AA1E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4719BA428DF5BCE007AA1E3 /* Assets.xcassets */; };
 		B4719BA828DF5BCE007AA1E3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4719BA728DF5BCE007AA1E3 /* Preview Assets.xcassets */; };
 		B4719BB228DF8351007AA1E3 /* WeatherKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4719BB128DF8351007AA1E3 /* WeatherKitManager.swift */; };
+		B4719BB428E0ADAA007AA1E3 /* LocationDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4719BB328E0ADAA007AA1E3 /* LocationDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		B4719BA728DF5BCE007AA1E3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B4719BAE28DF6220007AA1E3 /* WeatherKit_CoreLocation_SwiftUI_Tutorial.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WeatherKit_CoreLocation_SwiftUI_Tutorial.entitlements; sourceTree = "<group>"; };
 		B4719BB128DF8351007AA1E3 /* WeatherKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherKitManager.swift; sourceTree = "<group>"; };
+		B4719BB328E0ADAA007AA1E3 /* LocationDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				B4719BA028DF5BCD007AA1E3 /* WeatherKit_CoreLocation_SwiftUI_TutorialApp.swift */,
 				B4719BA228DF5BCD007AA1E3 /* ContentView.swift */,
 				B4719BB128DF8351007AA1E3 /* WeatherKitManager.swift */,
+				B4719BB328E0ADAA007AA1E3 /* LocationDataManager.swift */,
 				B4719BA428DF5BCE007AA1E3 /* Assets.xcassets */,
 				B4719BA628DF5BCE007AA1E3 /* Preview Content */,
 			);
@@ -144,6 +147,7 @@
 			files = (
 				B4719BA328DF5BCD007AA1E3 /* ContentView.swift in Sources */,
 				B4719BA128DF5BCD007AA1E3 /* WeatherKit_CoreLocation_SwiftUI_TutorialApp.swift in Sources */,
+				B4719BB428E0ADAA007AA1E3 /* LocationDataManager.swift in Sources */,
 				B4719BB228DF8351007AA1E3 /* WeatherKitManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,6 +281,7 @@
 				DEVELOPMENT_TEAM = 6R7D5U33PL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "App needs to access your location data to tell you the weather at your location";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -307,6 +312,7 @@
 				DEVELOPMENT_TEAM = 6R7D5U33PL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "App needs to access your location data to tell you the weather at your location";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

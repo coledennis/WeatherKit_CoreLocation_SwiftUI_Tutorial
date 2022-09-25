@@ -9,12 +9,17 @@ import SwiftUI
 
 struct ContentView: View {
     @ObservedObject var weatherKitManager = WeatherKitManager()
+    @StateObject var locationDataManager = LocationDataManager()
     
     var body: some View {
-        Label(weatherKitManager.temp, systemImage: weatherKitManager.symbol)
-            .task {
-                await weatherKitManager.getWeather()
-            }
+        if locationDataManager.authorizationStatus == .authorizedWhenInUse {
+            Label(weatherKitManager.temp, systemImage: weatherKitManager.symbol)
+                .task {
+                    await weatherKitManager.getWeather(latitude: locationDataManager.latitude, longitude: locationDataManager.longitude)
+                }
+        } else {
+            Text("Error Loading Location")
+        }
     }
 }
 

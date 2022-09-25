@@ -8,14 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var weatherKitManager = WeatherKitManager()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
+        Label(weatherKitManager.temp, systemImage: weatherKitManager.symbol)
+            .task {
+                await weatherKitManager.getWeather()
+            }
     }
 }
 
